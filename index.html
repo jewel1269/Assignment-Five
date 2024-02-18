@@ -26,7 +26,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a>Home</a></li>
+                <li><a class="text-5xl">Home</a></li>
                 <li><a>About</a></li>
                 <li><a>Destination</a></li>
                 <li><a>Search</a></li>
@@ -36,10 +36,10 @@
         </div>
         <div class="navbar-center hidden lg:flex items-center ">
           <ul class="menu menu-horizontal px-1 lg:gap-14 text-2xl lg:mt-11">
-            <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Destination</a></li>
-              <li><a>Search</a></li>
+            <li><a class="text-xl font-bold">Home</a></li>
+              <li><a class="text-xl font-bold">About</a></li>
+              <li><a class="text-xl font-bold">Destination</a></li>
+              <li><a class="text-xl font-bold">Search</a></li>
           </ul>
         </div>
         <div class="navbar-end mt-11">
@@ -222,10 +222,10 @@
 </button>
 <div class="  grid grid-cols-5 w-[500px] gap-12 justify-center items-center mt-8">
     <h1 class="text-xl font-bold">A</h1>
-    <button id="color" class="btn btn-jewel">A1</button>
-    <button id="color" class="btn btn-jewel">A2</button>
-    <button id="color" class="btn btn-jewel">A3</button>
-    <button id="color" class="btn btn-jewel">A4</button>
+    <button onclick="buttonColor()" id="color" class="btn btn-jewel">A1</button>
+    <button class="btn btn-jewel">A2</button>
+    <button class="btn btn-jewel">A3</button>
+    <button class="btn btn-jewel">A4</button>
     <h1 class="text-xl font-bold">B</h1>
     <button class="btn btn-jewel">B1</button>
     <button class="btn btn-jewel">B2</button>
@@ -307,14 +307,16 @@
 
         <button id="apply-button" class="btn join-item -r-full bg-green-600">Apply</button>
       </div>
+      
+      <div class="flex justify-between mt-3">
+<h1 class="font-bold">After Discount</h1>
+<h1 class="font-bold">BDT <span id="dis-total">O</span></h1>
+</div>
 <div class="flex justify-between mt-3">
 <h1 class="font-bold">Grand Total</h1>
 <h1 class="font-bold">BDT <span id="grand-total">O</span></h1>
 </div>
-<div class="flex justify-between mt-3">
-<h1 class="font-bold">After Discount</h1>
-<h1 class="font-bold">BDT <span id="dis-total">O</span></h1>
-</div>
+
  </div>
 
  <div class="mt-10">

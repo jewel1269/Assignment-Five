@@ -35,6 +35,7 @@ const sum = converted + parseInt(p3.innerText);
 
 document.getElementById('total-price').innerText= sum;
 
+
 const grandTotal = document.getElementById('grand-total');
 grandTotal.innerText = sum;
 
@@ -43,8 +44,8 @@ grandTotal.innerText = sum;
 const currentSeat = document.getElementById('available-seat').innerText;
 const convert = parseInt(currentSeat)
 const sub = convert - 1;
-const finalresult = document.getElementById('available-seat').innerText = sub;
-console.log(finalresult);
+const finalResult = document.getElementById('available-seat').innerText = sub;
+console.log(finalResult);
 
 
 
@@ -52,48 +53,30 @@ console.log(finalresult);
 }
 
 
-const batton = document.getElementById('apply-button');
-batton.addEventListener("click", function(){
-
- const couponElement = document.getElementById("input-field").value;
-    
-if(couponElement === "NEW15"){
-    const discountAmount = document.getElementById("dis-total");
-    const changes = parseInt(discountAmount)
-    const grandTotal = document.getElementById('grand-total');
-grandTotal.innerText = sum;
-const result = grandTotal.innerText * 0.15;
-changes.innerText = result;
 
 
-if(couponElement === "Couple 20"){
-const discountAmount = document.getElementById("dis-total");
+const applyButton = document.getElementById('apply-button');
+applyButton.addEventListener("click", function() {
+  const couponElement = document.getElementById("input-field").value;
+  console.log(couponElement);
 
-const result = grandTotal.innerText * 0.2;
-changes.innerText = result;
+  const discountAmountElement = document.getElementById("dis-total");
+  const grandTotalElement = document.getElementById('grand-total');
+
+  if (couponElement === "NEW15") {
+    const grandTotal = parseInt(grandTotalElement.innerText);
+    const result = grandTotal * 0.15;
+
+    discountAmountElement.innerText = result;
+
+  } else if (couponElement === "Couple 20") {
+    const grandTotal = parseInt(grandTotalElement.innerText);
+    const result = grandTotal * 0.2;
+    discountAmountElement.innerText = result;
 
 
-    }else{
-        // alert("Invalid Coupon");
-    }
-}
-else{
-    // alert("Invalid Coupon");
-}
-})
+  } else {
+    alert("Invalid Coupon");
+  }
+});
 
-
-// applyCoupon.addEventListener("click",function(){
-// const inputArea = document.getElementById('input-field');
-//     //  const couponCode = inputArea.split(" ").join("").toUpperCase("");
-//      console.log(inputArea)
-
-//      if(couponCode === "NEW15"){
-//         const grandTotal = document.getElementById('grand-total');
-//       const discountAmount = sum * 0.15;
-//       grandTotal.innerText = discountAmount;
-//      } 
-//      else{
-//         alert("Invalid Coupon");
-//      } 
-// })
