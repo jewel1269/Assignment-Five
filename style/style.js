@@ -66,17 +66,28 @@ applyButton.addEventListener("click", function() {
   if (couponElement === "NEW15") {
     const grandTotal = parseInt(grandTotalElement.innerText);
     const result = grandTotal * 0.15;
+console.log(result);
 
     discountAmountElement.innerText = result;
+    
+    document.getElementById("grand-total").innerText = grandTotal - result;
+    
 
   } else if (couponElement === "Couple 20") {
     const grandTotal = parseInt(grandTotalElement.innerText);
     const result = grandTotal * 0.2;
     discountAmountElement.innerText = result;
-
+    document.getElementById("grand-total").innerText = grandTotal - result;
 
   } else {
     alert("Invalid Coupon");
   }
 });
 
+
+// this is scroll bar part
+
+document.getElementById('scroll-bar').addEventListener('click', function() {
+    // Scroll to the specified section smoothly
+    document.getElementById('main-section').scrollIntoView({ behavior: 'smooth' });
+});

@@ -45,10 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
 document.getElementById('input-field').addEventListener('input', function () {
     const inputValue = this.value.trim();
 
-    // Check if the input is a number
     const isNumber = !isNaN(inputValue) && inputValue !== '';
-
-    // Enable or disable the button based on whether the input is a number
     document.getElementById('myButton').disabled = !isNumber;
   });
   
+
