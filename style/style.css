@@ -9,4 +9,9 @@ hr {
     background-color: white;
     border-radius: 10px;
   }
- 
+
+  li{
+    display: flex;
+    gap: 90px;
+   font-size: 18px;
+  }

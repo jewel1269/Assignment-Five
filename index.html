@@ -182,6 +182,7 @@
                 </div>
                    </div>
 
+                   <!-- <hr class="transform rotate-90  relative bottom-[170px] ml-24 w-full"> -->
         
                    <div>
                     <img class="ml-16" src="./images/fare.png" alt="">
@@ -219,70 +220,81 @@
 </button>
 <div class="  grid grid-cols-5 w-[350px] gap-12 justify-center items-center mt-8">
     <h1>A</h1>
-    <button class="btn">A1</button>
-    <button class="btn">A2</button>
-    <button class="btn">A3</button>
-    <button class="btn">A4</button>
+    <button class="btn btn-active">A1</button>
+    <button class="btn btn-active">A2</button>
+    <button class="btn btn-active">A3</button>
+    <button class="btn btn-active">A4</button>
     <h1>B</h1>
-    <button class="btn">B1</button>
-    <button class="btn">B2</button>
-    <button class="btn">B3</button>
-    <button class="btn">B4</button>
+    <button class="btn btn-active">B1</button>
+    <button class="btn btn-active">B2</button>
+    <button class="btn btn-active">B3</button>
+    <button class="btn btn-active">B4</button>
     <h1>C</h1>
-    <button class="btn">C1</button>
-    <button class="btn">C2</button>
-    <button class="btn">C3</button>
-    <button class="btn">C4</button>
+    <button class="btn btn-active ">C1</button>
+    <button class="btn btn-active">C2</button>
+    <button class="btn btn-active">C3</button>
+    <button class="btn btn-active">C4</button>
     <h1>D</h1>
-    <button class="btn">D1</button>
-    <button class="btn">D2</button>
-    <button class="btn">D3</button>
-    <button class="btn">D4</button>
-    <h1>E</h1>
-    <button class="btn">E1</button>
-    <button class="btn">E2</button>
-    <button class="btn">E3</button>
-    <button class="btn">E4</button>
-    <h1>F</h1>
-    <button class="btn">F1</button>
-    <button class="btn">F2</button>
-    <button class="btn">F3</button>
-    <button class="btn">F4</button>
+    <button class="btn btn-active">D1</button>
+    <button class="btn btn-active">D2</button>
+    <button class="btn btn-active">D3</button>
+    <button class="btn btn-active">D4</button>
+    <h1>E</h1> 
+    <button class="btn btn-active">E1</button>
+    <button class="btn btn-active">E2</button>
+    <button class="btn btn-active">E3</button>
+    <button class="btn btn-active">E4</button>
+    <h1>F</h1> 
+    <button class="btn btn-active">F1</button>
+    <button class="btn btn-active">F2</button>
+    <button class="btn btn-active">F3</button>
+    <button class="btn btn-active">F4</button>
     <h1>G</h1>
-    <button class="btn">G1</button>
-    <button class="btn">G2</button>
-    <button class="btn">G3</button>
-    <button class="btn">G4</button>
-    <h1>H</h1>
-    <button class="btn">H1</button>
-    <button class="btn">H2</button>
-    <button class="btn">H3</button>
-    <button class="btn">H4</button>
-    <h1>I</h1>
-    <button class="btn">I1</button>
-    <button class="btn">I2</button>
-    <button class="btn">I3</button>
-    <button class="btn">I4</button>
-    <h1>J</h1>
-    <button class="btn">J1</button>
-    <button class="btn">J2</button>
-    <button class="btn">J3</button>
-    <button class="btn">J4</button>
+    <button class="btn btn-active">G1</button>
+    <button class="btn btn-active">G2</button>
+    <button class="btn btn-active">G3</button>
+    <button class="btn btn-active">G4</button>
+    <h1>H</h1> 
+    <button class="btn btn-active">H1</button>
+    <button class="btn btn-active">H2</button>
+    <button class="btn btn-active">H3</button>
+    <button class="btn btn-active">H4</button>
+    <h1>I</h1> 
+    <button class="btn btn-active">I1</button>
+    <button class="btn btn-active">I2</button>
+    <button class="btn btn-active">I3</button>
+    <button class="btn btn-active">I4</button>
+    <h1>J</h1> 
+    <button class="btn btn-active">J1</button>
+    <button class="btn btn-active">J2</button>
+    <button class="btn btn-active">J3</button>
+    <button class="btn btn-active">J4</button>
 </div>
+
+
+
+<hr class="transform rotate-90  relative bottom-[950px] ml-96 w-full">
+<hr class="transform rotate-90  relative bottom-[570px] ml-96 w-full">
+<hr class="transform rotate-90  relative bottom-[190px] ml-96 w-full">
+
 </section>
+
+
+
 <section>
     <h1 class="font-bold text-2xl">Select Your Seat</h1>
     <hr class="mt-5">
  <div class="bg-slate-200 w-full p-8 rounded-xl mt-8">
 <div class="flex gap-20">
-<h1 class="font-bold">Seats <span class="text-green-500">0</span></h1>
+<h1 class="font-bold">Seats <span id="calculate" class="text-green-500">0</span></h1>
 <h1 class="font-bold">class</h1>
 <h1 class="font-bold">price</h1>
 </div>
 <hr class="mt-4">
-<div class="h-20">
 
-</div>
+<section id="add-price" class="h-28">
+
+</section>
 <hr>
 <div class="flex justify-between">
 <h1 class="font-bold">Total price</h1>
@@ -311,7 +323,22 @@
 <br>
 <br>
 <br>
-<button class="btn w-96 bg-green-600">Next</button>
+<!-- The button to open modal -->
+<label for="my_modal_6" class="btn bg-green-600 w-full text-2xl font-bold">Next</label>
+
+<input type="checkbox" id="my_modal_6" class="modal-toggle" />
+<div class="modal" role="dialog ">
+  <div class="modal-box p-8">
+    <img class="ml-44" src="./images/success.png" alt="">
+    <p class="py-4 text-center text-3xl font-bold">SUCCESS</p>
+    <p class="py-4 text-xl"><strong>Thank you for Booking Our Bus Seats. 
+        We are working hard to find the best service and deals for you.</strong></p> 
+        <p class="text-center text-xl"> you will find a confirmation in your email.</p>
+    <div class="modal-action">
+      <label for="my_modal_6" class="btn bg-green-600 w-32  mr-40 text-xl font-bold">Continue</label>
+    </div>
+  </div>
+</div>
 <div class="flex justify-between mt-8">
     <h1 class="underline">Terms and Conditions</h1>
     <h1 class="underline">Cancellation Policy</h1>
