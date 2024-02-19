@@ -50,3 +50,16 @@ document.getElementById('input-field').addEventListener('input', function () {
   });
   
 
+
+  // this is button reset part
+
+
+ 
+  document.addEventListener('DOMContentLoaded', function () {
+
+const refreshButton = document.getElementById('refreshButton');
+    refreshButton.addEventListener('click', function () {
+        location.reload();
+    });
+});
+

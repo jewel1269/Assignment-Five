@@ -71,6 +71,9 @@ console.log(result);
     discountAmountElement.innerText = result;
     
     document.getElementById("grand-total").innerText = grandTotal - result;
+
+    const playGround = document.getElementById('hidden-part');
+    playGround.classList.add('hidden');
     
 
   } else if (couponElement === "Couple 20") {
@@ -78,6 +81,9 @@ console.log(result);
     const result = grandTotal * 0.2;
     discountAmountElement.innerText = result;
     document.getElementById("grand-total").innerText = grandTotal - result;
+
+    const playGround = document.getElementById('hidden-part');
+    playGround.classList.add('hidden');
 
   } else {
     alert("Invalid Coupon");

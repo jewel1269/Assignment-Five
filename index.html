@@ -47,10 +47,14 @@
         </div>
       </div>
 
+
+
+
+
       <!-- background image part -->
       <div class="min-h-screen w-full  bg-[url(images/banner.png)] bg-no-repeat bg-center">
      <div class="flex flex-col justify-center items-center relative top-80">
-        <h1 class="text-white text-7xl font-bold">End-To-End Travel With <h1 class="text-green-400 text-5xl font-bold"> Love-Express</h1> </h1>
+        <h1 class="text-white text-7xl font-bold">End-To-End Travel With <h1 class="text-green-500 text-5xl font-bold"> Love-Express</h1> </h1>
         <br>
         <h1 class="text-2xl text-white">Yes, you can run unit tests and view the results directly within the app. The <h1 class="text-2xl text-white"> integrated testing features allow for a streamlined .</h1></h1>
         <br>
@@ -96,6 +100,12 @@
     
 </header>
 
+
+
+
+
+
+
 <!-- this is main part -->
 <main>
     <section>
@@ -128,16 +138,23 @@
             </div>
         </div>
 
-        <button class="btn border w-40 text-xl text-green-600 font-bold flex lg:relative lg:left-[900px] top-16">See all Offers</button>
+        <button class="btn btn-active border w-40 text-xl text-green-600 font-bold flex lg:relative lg:left-[900px] top-16">See all Offers</button>
     </section>
 
+
+
+
+
+
     <!-- main part -->
-    <section  class="bg-slate-200 shadow-inner shadow-green-400 rounded-2xl h-full w-full mt-28 p-24  ">
+    <section  class="bg-slate-200 shadow-inner shadow-green-400 rounded-3xl h-full w-full mt-28 p-24  ">
 <div class="">
     <h1 class=" text-center text-5xl mt-8 font-bold p-6">Love-Express</h1>
 <p class="text-center text-xl">This is my own Company. "Safe Travel" purpose in This company. <br>
  So if you are Traveler than contact my company and confirm your seats. <br> <strong>Thank you</strong> </p>
 </div>
+<div class="bg-slate-200 rounded-full w-12 h-10 relative top-[85px] ml-[1150px]"></div>
+
         <section class="bg-white mt-16 rounded-xl ml-32 mr-32 p-8 ">
            <div class="flex  ml-14 items-center gap-72 p-10 ">
             <div class="flex gap-3">
@@ -156,13 +173,13 @@
          <div class="lg:flex justify-around">
             <div class="bg-slate-100 h-[260px] w-[850px] rounded-xl">
                 <div class="flex justify-between items-center p-8">
-                 <h1 class="text-xl">Route</h1>
-                 <h1 class="text-xl">Dhaka - Sylhet</h1>
+                 <h1 class="text-xl font-semibold">Route</h1>
+                 <h1 class="text-xl font-semibold">Dhaka - Sylhet</h1>
                 </div>
                 <hr>
                 <div class="flex justify-between items-center p-8">
-                 <h1 class="text-xl">Departure Time</h1>
-                 <h1 class="text-xl">10:00 PM</h1>
+                 <h1 class="text-xl font-semibold">Departure Time</h1>
+                 <h1 class="text-xl font-semibold">10:00 PM</h1>
 
                 </div>
                 
@@ -170,17 +187,19 @@
                 <div class="mt-4">
                     <div class="flex justify-center items-center gap-7">
                         <div class="border w-56 bg-slate-300 rounded-xl">
-                            <h1 class="p-2">Boarding Point - Laxmipur</h1>
+                            <h1 class="p-2 font-semibold">Boarding Point - Laxmipur</h1>
                         </div>
                         <div class="border w-56 bg-slate-300 rounded-xl">
-                            <h1 class="p-2">Dropping Point - Bogura</h1>
+                            <h1 class="p-2 font-semibold">Dropping Point - Bogura</h1>
                         </div>
-                        <div class="border w-56 bg-slate-300 rounded-xl">
-                            <h1 class="p-2">Est. Time - 11 Hour</h1>
+                        <div class="border w-48 bg-slate-300 rounded-xl">
+                            <h1 class="p-2 font-semibold">Est. Time - 11 Hour</h1>
                         </div>
                 </div>
                 </div>
                    </div>
+
+
 
                    <!-- <hr class="transform rotate-90  relative bottom-[170px] ml-24 w-full"> -->
         
@@ -191,7 +210,11 @@
                    </div>
                    
          </div>
+         <div class="bg-slate-200 rounded-full w-12 h-10 relative top-[52px] ml-[990px]"></div>
         </section>
+
+
+
 
 
         <section class="bg-white mt-16 rounded-xl ml-32 mr-32 p-8 flex justify-around  ">
@@ -222,7 +245,7 @@
 </button>
 <div class="  grid grid-cols-5 w-[500px] gap-12 justify-center items-center mt-8">
     <h1 class="text-xl font-bold">A</h1>
-    <button onclick="buttonColor()" id="color" class="btn btn-jewel">A1</button>
+    <button class="btn btn-jewel">A1</button>
     <button class="btn btn-jewel">A2</button>
     <button class="btn btn-jewel">A3</button>
     <button class="btn btn-jewel">A4</button>
@@ -302,8 +325,8 @@
 <h1 class="font-bold">Total price</h1>
 <h1 class="font-bold">BDT <span id="total-price">0</span></h1>
 </div>
-    <div class="join mt-6">
-        <input id="input-field"  class="input input-bordered join-item" placeholder="Have a any Coupon"/>
+    <div id="hidden-part" class="join mt-6">
+        <input id="input-field"  class="input input-bordered join-item" placeholder="Have any Coupon"/>
 
         <button id="apply-button" class="btn join-item -r-full bg-green-600">Apply</button>
       </div>
@@ -328,23 +351,28 @@
     <br>
     <br>
     <h1 class="font-bold">Emil ID</h1>
-    <input class="p-2 input input-bordered w-96" type="email" name="" id="" placeholder="Enter Your Email">
+    <input class="p-2 input input-bordered w-96" type="email" name="" id="" placeholder="Enter Your Email" required>
 <br>
 <br>
 <br>
+
+
+
+
 <!-- The button to open modal -->
+
 <label id="myButton" for="my_modal_6" class="btn bg-green-600 w-full text-2xl font-bold">Next</label>
 
-<input type="checkbox" id="my_modal_6" class="modal-toggle" />
-<div class="modal" role="dialog ">
-  <div class="modal-box p-8">
+<input type="checkbox" id="my_modal_6" class="modal-toggle  " />
+<div class="modal " role="dialog  ">
+  <div class="modal-box p-8 bg-slate-100 ">
     <img class="ml-44" src="./images/success.png" alt="">
     <p class="py-4 text-center text-3xl font-bold">SUCCESS</p>
     <p class="py-4 text-xl"><strong>Thank you for Booking Our Bus Seats. 
         We are working hard to find the best service and deals for you.</strong></p> 
         <p class="text-center text-xl"> you will find a confirmation in your email.</p>
     <div class="modal-action">
-      <label for="my_modal_6" class="btn bg-green-600 w-32  mr-40 text-xl font-bold">Continue</label>
+      <label id="refreshButton" for="my_modal_6" class="btn bg-green-600 w-32  mr-40 text-xl font-bold">Continue</label>
     </div>
   </div>
 </div>
